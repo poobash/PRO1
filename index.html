@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LOGIN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="path"></div>
+  <form >
+      
+      <h1>LOG IN</h1>  
+    <label>USERNAME</label>
+      <input type="text" placeholder="entre text" id="username" ></input>
+      <label>PASSWORD</label>
+      <input type="password" placeholder="entre password" id="password"></input><br>   
+       <button>LOGIN</button><br>
+       <a href="#">forget password?</a>
+       </form>    
+    </div>
+  <script>
+    function validate(){
+      var username=document.getElementById("username").value;
+      var password=document.getElementById("password").value;
+      if(username=="admin"&& password=="user")
+       {
+         alert("login sucessfully");
+         return false;
+       }
+        else{
+          alert("login failed")
+        }
+      }
+  </script>
+  
+  </body>
+</html>
